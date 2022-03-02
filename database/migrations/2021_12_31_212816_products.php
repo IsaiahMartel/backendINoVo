@@ -17,6 +17,7 @@ class Products extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->engine="InnoDB";
             $table->bigIncrements('id');
+            $table->String('type');
             $table->String('brand');
             $table->String('model');
             $table->Decimal('price');
